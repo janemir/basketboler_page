@@ -1,6 +1,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     color: #2A2D46;
+    margin: 0;
 }
 
 .nav{
@@ -8,6 +9,28 @@ body{
     list-style-type: none;
     justify-content: center;
     padding-left: 0;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__button {
+    background-color: #FF4081;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.header__cart {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .nav>li{
