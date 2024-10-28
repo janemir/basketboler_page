@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Баскетболер</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
             <div class="header_logo">
-                <img src="img/Логотип.svg" alt="Логотип Баскетболер">
-                <span>Магазин баскетбольных товаров</span>
+                <img src="img/Логотип.svg" alt="Логотип Баскетболер" class="logo_img">
+                <div class="logo_text">
+                    <span class="logo_name">БАСКЕТБОЛЕР</span>
+                    <span class="logo_subtitle">Магазин баскетбольных товаров</span>
+                </div>
             </div>
             <nav class="header_nav">
                 <ul class="nav">
@@ -23,9 +26,12 @@
                 </ul>
             </nav>
             <div class="header_contacts">
-                <a href="tel:89004532798">8(900)453-27-98</a>
+                <a href="tel:89004532798" class="phone">8(900)453-27-98</a>
                 <button class="header_button">Заказать звонок</button>
-                <a href="" class="header_cart">Корзина: 3 243 руб.</a>
+                <div class="header_cart">
+                    <img src="img/cart-icon.svg" alt="Корзина" class="cart_icon">
+                    <span>3 243 руб. ∇</span>
+                </div>
             </div>
         </div>
     </header>
@@ -42,8 +48,13 @@
                     <img src="img/Кроссы.png" alt="Кроссовки" class="promo_image">
                     <div class="promo_overlay">
                         <h2>NIKE AIR JORDAN 1</h2>
-                        <p>Верх из натуральной кожи с защитой и текстурной подошвой</p>
+                        <p>Верх из натуральной красной замши дополнен накладкой с текстурой</p>
                         <p class="promo_price">5780 руб.</p>
+                    </div>
+                    <div class="progress_bars">
+                        <div class="progress_bar active"></div>
+                        <div class="progress_bar"></div>
+                        <div class="progress_bar"></div>
                     </div>
                 </div>
             </section>
