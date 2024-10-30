@@ -80,6 +80,7 @@ header {
 
 .phone {
     position: relative;
+    text-decoration: none;
     left: 760px;
     top: -70px;
     font-size: 14px;
@@ -87,16 +88,24 @@ header {
     color: #2A2D46;
 }
 
+
+
 .header_button {
     position: relative;
     left: 800px;
     top: -70px;
-    background-color: #EB2D66;
-    color: #fff;
+    background-color: #fff;
+    color: #EB2D66;
+    font-family: "Montserrat";
     padding: 5px 15px;
-    border: none;
+    border: 3px solid #EB2D66; 
     font-size: 14px;
     cursor: pointer;
+}
+
+.header_button:hover {
+    background-color: #EB2D66;
+    color: #fff;
 }
 
 .header_cart {
@@ -147,11 +156,12 @@ header {
     background-color: #EB2D66;
     color: #fff;
     font-size: 16px;
-    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 50px;
     margin-top: 30px;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(255, 53, 124, 0.3);
+    box-shadow: 0px 4px 20px rgba(255, 53, 124, 0.432);
 }
 
 .promo_image-wrapper {
@@ -188,15 +198,25 @@ header {
 
 .promo_overlay {
     position: absolute;
-
-    top: 50px;
-    left: 500px;
+    top: 25px;
+    left: 535px;
     color: #fff;
     z-index: 3;
 }
 
+.white_square {
+    position: absolute;
+    top: -15px;
+    left: -25px; 
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    z-index: 4;
+}
+
 .promo_overlay h2 {
     font-size: 20px;
+    width: 220px;
     font-weight: bold;
 }
 
@@ -214,19 +234,19 @@ header {
 .progress_bars {
     position: absolute;
     bottom: 10px;
-    right: 20px;
+    left: 600px;
+    top: 330px;
     display: flex;
-    gap: 8px;
+    gap: 15px;
     z-index: 3;
 }
 
 .progress_bar {
-    width: 15px;
-    height: 5px;
-    background-color: #ccc;
-    border-radius: 2px;
+    width: 35px;
+    height: 8px;
+    background-color: #cccccc78;
 }
 
 .progress_bar.active {
-    background-color: #EB2D66;
+    background-color: #ffffff;
 }
