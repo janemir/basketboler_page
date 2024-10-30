@@ -57,7 +57,7 @@ header {
 
 .nav {
     position: relative;
-    left: 350px;
+    left: 320px;
     top: -50px;
     display: flex;
     list-style-type: none;
@@ -71,6 +71,8 @@ header {
 }
 
 .header_contacts {
+    position: relative;
+    left: -30px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -156,7 +158,6 @@ header {
     position: relative;
     width: 600px;
     height: 400px;
-    overflow: hidden;
 }
 
 .promo_background {
@@ -165,22 +166,33 @@ header {
     left: 0;
     width: 615px;
     height: 369px;
-    background-color: rgba(0, 0, 255, 0.805);
 }
 
-.promo_image {
+.promo_image_1 {
+    width: 110%;
+    height: auto;
+    position: relative;
+    top: -40px;
+    left: 150px;
+    z-index: 1;
+}
+
+.promo_image_2 {
     width: 100%;
     height: auto;
     position: relative;
-    z-index: 1;
+    top: -330px;
+    left: -50px;
+    z-index: 2;
 }
 
 .promo_overlay {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+
+    top: 50px;
+    left: 500px;
     color: #fff;
-    z-index: 2;
+    z-index: 3;
 }
 
 .promo_overlay h2 {
