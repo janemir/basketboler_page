@@ -252,7 +252,30 @@ header {
 }
 
 /* Горячие поступления */
-.hot-arrivals {
+
+.header-line {
+    display: flex;
+    align-items: center; /* Центрирует элементы по вертикали */
+    gap: 80px; /* Задает промежуток между элементами */
+    margin-left: 410px;
+    margin-top: 200px;
+}
+
+.header-line h2 {
+    margin: 0; /* Убирает отступы, чтобы элементы находились на одной линии */
+}
+
+.header-line a {
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: black; /* Устанавливает цвет текста ссылок */
+}
+
+.header-line .active {
+    color: #3145FF; /* Выделяет активную ссылку */
+}
+
+
+/*.hot-arrivals {
     padding: 50px 0;
     
 }
@@ -279,19 +302,21 @@ header {
 .hot-arrivals-nav a:hover {
     color: #3145FF;
     font-weight: bold;
-}
+}*/
 .product-carousel {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
-    gap: 15px;
+    margin-top: 100px;
+    gap: 50px;
 }
 .product-card {
+    
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    gap: 50px;
+    width: 269px;
     text-align: left;
     position: relative;
 }
@@ -336,18 +361,24 @@ header {
 .carousel-indicator {
     display: flex;
     justify-content: center;
-    gap: 10px;
     margin-top: 20px;
+    margin-left: -300px;
 }
-.carousel-indicator .indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
+
+.scroll-line {
+    display: flex;
+    align-items: center; /* Выравнивает элементы по вертикали */
+    position: relative;
 }
-.carousel-indicator .indicator.active {
-    background-color: #3145FF;
+
+.slider {
+    /* Смещение ползунка на нужное расстояние, например, влево */
+    margin-left: -320px; 
+    margin-top: 5px;/* Смещает ползунок влево */
+    /* При необходимости можно также использовать transform */
 }
+
+
 
 /* Промо-секция */
 .promo-section {
