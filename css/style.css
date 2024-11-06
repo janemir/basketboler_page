@@ -254,12 +254,14 @@ header {
 /* Горячие поступления */
 .hot-arrivals {
     padding: 50px 0;
-    text-align: center;
+    
 }
 .hot-arrivals h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
-    color: #333;
+    color: #2A2D46;
+    margin-left: 407px;
+    margin-top: 50px;
 }
 .hot-arrivals-nav {
     display: flex;
@@ -271,6 +273,7 @@ header {
     font-size: 14px;
     color: #888;
     text-decoration: none;
+    margin-top: 50px;
 }
 .hot-arrivals-nav a.active,
 .hot-arrivals-nav a:hover {
@@ -366,8 +369,7 @@ header {
     height: 250px;
 }
 .promo-card.purple {
-    background-image: url('img/promo1.jpg'); /* Замените на реальное изображение */
-    background-color: rgba(49, 69, 255, 0.8);
+    background-image: url('img/Rectangle 16.png'); /* Замените на реальное изображение */
 }
 .promo-card.pink {
     background-image: url('img/promo2.jpg'); /* Замените на реальное изображение */
