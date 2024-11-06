@@ -369,11 +369,10 @@ header {
     height: 250px;
 }
 .promo-card.purple {
-    background-image: url('img/Rectangle 16.png'); /* Замените на реальное изображение */
+    background-image: url('img/Rectangle 16.png'); 
 }
 .promo-card.pink {
-    background-image: url('img/promo2.jpg'); /* Замените на реальное изображение */
-    background-color: rgba(235, 45, 102, 0.8);
+    background-image: url('img/Rectangle 17.png'); 
 }
 .promo-card h3 {
     font-size: 18px;
