@@ -265,7 +265,7 @@ header {
   
   .header-line h2 {
     display: inline-block; /* Заголовок тоже на строке */
-    margin-right: 20px; /* Отступ от ссылок */
+    margin-right: 25px; /* Отступ от ссылок */
     color: #2A2D46;
   }
   
@@ -281,4 +281,40 @@ header {
   .header-line a.active {
     color: #3145FF; /* Цвет текста для активной ссылки */
   }
-  
+
+  .product-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.product-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(31, 18, 172, 0.112);
+    gap: 50px;
+    width: 269px;
+    height: 416px;
+    text-align: left;
+    position: relative;
+}
+
+.product-decorator {
+    position: relative;
+    top: -50px; /* Adjust this value to fine-tune vertical position */
+}
+
+.product-decorator.left {
+    margin-right: 20px;
+}
+
+.product-decorator.right {
+    margin-left: 50px;
+}
