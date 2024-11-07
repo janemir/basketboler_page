@@ -389,57 +389,68 @@ header {
 /* Промо-секция */
 .promo-section {
     display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
-    margin-top: 50px;
-    gap: 15px;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 10px;
 }
 
-.promo-card {
+.promo-item {
     position: relative;
-    width: 48%;
-    padding: 20px;
-    color: white; /* Белый текст */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выравниваем текст по левому краю */
-    height: 250px;
-    background-size: cover; /* Важно для фоновых изображений */
-    background-position: center; /* Центрируем фоновые изображения */
+    width: 30%;
+    height: 500px; /* Установите высоту по необходимости */
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы */
 }
 
-.promo-card.purple {
-    background-image: url("img/Rectangle 16.png");
+.promo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
-.promo-card.pink {
-    background-image: url("img/Rectangle 17.png");
+.promo-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 1; /* Текст поверх изображения */
 }
 
-.promo-card h3 {
+.promo-content h3 {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px; /* Добавили отступ сверху */
+    margin-bottom: 5px;
 }
 
-.promo-card p {
+.promo-content p {
     font-size: 14px;
-    margin-bottom: 20px; /* Добавили отступ снизу */
+    margin-bottom: 10px;
 }
 
 .promo-icon-plus {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 24px; /* Настройте размер по необходимости */
+    width: 24px;
     height: auto;
+    margin-top: -60px;
 }
 
 .promo-icon-top {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40px; /* Настройте размер по необходимости */
+    width: 20px;
     height: auto;
 }
+
+.promo-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex; /* Центрируем картинку внутри ссылки */
+    align-items: center;
+    justify-content: center;
+}
+
 
