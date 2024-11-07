@@ -98,7 +98,7 @@ header {
     color: #EB2D66;
     font-family: "Montserrat";
     padding: 5px 15px;
-    border: 3px solid #EB2D66; 
+    border: 1px solid #EB2D66; 
     font-size: 14px;
     cursor: pointer;
 }
@@ -391,22 +391,41 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    gap: 10px;
+    gap: 50px;
 }
 
-.promo-item {
+.promo-item-1 {
     position: relative;
-    width: 30%;
-    height: 500px; /* Установите высоту по необходимости */
+    width: 650px;
+    height: 600px;
     overflow: hidden; /* Скрываем элементы, выходящие за пределы */
 }
 
-.promo-background {
+.promo-item-2 {
+    position: relative;
+    width: 650px;
+    height: 600px;
+    margin-top: -50px;
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы */
+}
+
+.promo-background-1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+.promo-background-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
     background-size: cover;
     background-position: center;
 }
@@ -423,6 +442,7 @@ header {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-top: -200px;
 }
 
 .promo-content p {
@@ -430,10 +450,17 @@ header {
     margin-bottom: 10px;
 }
 
-.promo-icon-plus {
+.promo-icon-plus-1 {
     width: 24px;
     height: auto;
-    margin-top: -60px;
+    margin-top: -1100px;
+    margin-left: 300px;
+}
+
+.promo-icon-plus-2 {
+    width: 24px;
+    height: auto;
+    margin-top: -1000px;
 }
 
 .promo-icon-top {
@@ -444,13 +471,26 @@ header {
     height: auto;
 }
 
-.promo-link {
+.promo-link-1 {
     position: absolute;
     top: 20px;
     right: 20px;
     display: flex; /* Центрируем картинку внутри ссылки */
     align-items: center;
     justify-content: center;
+    margin-top: -20px;
+    left: 450px;
+}
+
+.promo-link-2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex; /* Центрируем картинку внутри ссылки */
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    left: 535px;
 }
 
 
