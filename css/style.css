@@ -339,7 +339,6 @@ header {
     text-align: left;
     margin-top: 40px;
     color: #3145FF;
-    font-style: inherit;
 }
 
 .product-decorator {
@@ -412,17 +411,23 @@ header {
     margin-left: 25px;
 }
 
+.promo-title {
+    max-width: 300px; /* Задайте желаемую максимальную ширину */
+    text-align:left; /* Центрирование текста внутри контейнера */
+}
+
 .promo-title h3 {
     margin-left: 60px;
-    font-size: 1.2em; /*Пример размера шрифта, изменить по необходимости*/
+    font-size: 20px; /*Пример размера шрифта, изменить по необходимости*/
 }
 
 .promo-text p {
+    margin-top: 15px;
     margin-left: 60px;
     font-size: 1em; /*Пример размера шрифта, изменить по необходимости*/
 }
 
 .promo-link-wrapper {
-    margin-top: -305px;
+    margin-top: -340px;
     margin-left: 510px; /*Позиционирует ссылку снизу*/
 }
