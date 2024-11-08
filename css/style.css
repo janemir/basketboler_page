@@ -13,7 +13,6 @@ body {
 header {
     position: relative;
     top: 10px;
-    align-items: center;
 }
 
 .wrapper {
@@ -317,10 +316,9 @@ header {
 .product-card p{
     font-size: 12px;
     color: #2A2D46;
+    margin-top: -15px;
     text-align: center;
 }
-
-
 
 .product-decorator {
     position: relative;
@@ -333,4 +331,46 @@ header {
 
 .product-decorator.right {
     margin-left: 50px;
+}
+
+.promo-section {
+    display: flex; /* Используем flexbox для горизонтального выравнивания */
+    gap: 35px; /* Расстояние между элементами */
+    left: 50px;
+}
+
+.promo-item {
+    position: relative; /* Необходимо для абсолютного позиционирования контента */
+}
+
+.promo-background {
+    width: 570px;
+    height: 419px;
+    background-size:auto; /*  Обеспечиваем заполнение всего пространства */
+    background-position: center; /* Центрируем изображение */
+}
+
+.promo-content {
+    position: absolute;
+    bottom: 30px; /* Располагаем контент внизу изображения */
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Добавляем отступы */
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости текста */
+    color: white; /* Белый цвет текста */
+    text-align: left;
+
+}
+
+.promo-icon-top {
+    margin-bottom: 10px;
+}
+
+.promo-link {
+    display: block;
+    margin-top: 10px;
+}
+
+.promo-icon-plus{
+    width: 24px;
 }
