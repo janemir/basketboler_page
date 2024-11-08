@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
     color: #2A2D46;
     background-color: #fff;
 }
@@ -329,9 +330,10 @@ header {
     margin-top: 10px; 
 }
 
+
 .product-arrow{
     
-    margin-left: 180px;
+    margin-left: 200px;
     margin-top: -80px;
 }
 
@@ -351,7 +353,7 @@ header {
     color: #3145FF;
     text-align: left;
     margin-top: 80px;
-    display: block;
+    
 }
 
 .product-decorator {
