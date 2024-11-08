@@ -116,6 +116,10 @@ header {
     align-items: center;
 }
 
+.arrow{
+    margin-left: 10px;
+}
+
 .cart_icon {
     position: relative;
     position: relative;
@@ -320,6 +324,24 @@ header {
     text-align: center;
 }
 
+.product-arrow{
+    margin-top: 70px;
+    margin-left: 180px;
+}
+
+.old-price{
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+.new-price{
+    text-align: left;
+    margin-top: 40px;
+    color: #3145FF;
+    font-style: inherit;
+}
+
 .product-decorator {
     position: relative;
     top: -50px; /* Adjust this value to fine-tune vertical position */
@@ -401,6 +423,6 @@ header {
 }
 
 .promo-link-wrapper {
-    margin-top: -300px;
+    margin-top: -305px;
     margin-left: 510px; /*Позиционирует ссылку снизу*/
 }
