@@ -320,25 +320,40 @@ header {
 .product-card p{
     font-size: 12px;
     color: #2A2D46;
-    margin-top: -15px;
+    margin-top: 10px;
     text-align: center;
 }
 
-.product-arrow{
-    margin-top: 70px;
-    margin-left: 180px;
+.product-card img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; /* Adjust for vertical positioning */
 }
 
-.old-price{
+
+.product-arrow{
+    
+    margin-left: 180px;
+    margin-top: -80px;
+}
+
+.old-price {
     font-size: 14px;
     color: #000000;
     text-align: center;
+    text-decoration: line-through;
+    display: block;
+    margin-top: 10px;
 }
 
-.new-price{
-    text-align: left;
-    margin-top: 40px;
+
+.new-price {
+    font-size: 16px;
+    font-weight: bold;
     color: #3145FF;
+    text-align: left;
+    margin-top: 80px;
+    display: block;
 }
 
 .product-decorator {
