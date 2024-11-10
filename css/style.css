@@ -498,7 +498,7 @@ footer {
     margin-left: 10px;
 }
 
-.logo_name {
+.footer_logo_name {
     position: relative;
     top: -10px;
     font-size: 16px;
@@ -506,7 +506,7 @@ footer {
     color: #ffffff;
 }
 
-.logo_subtitle {
+.footer_logo_subtitle {
     position: relative;
     left: -132px;
     top: 7px;
@@ -514,7 +514,7 @@ footer {
     color: #ffffff;
 }
 
-.nav {
+.nav_footer {
     position: relative;
     left: 320px;
     top: -50px;
@@ -523,7 +523,7 @@ footer {
     gap: 30px;
 }
 
-.nav a {
+.nav_footer a {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
