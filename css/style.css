@@ -10,17 +10,14 @@ body {
     background-color: #fff;
 }
 
-h1 {
-    font-style: italic;
-    
-}
-
 header {
     position: relative;
     top: 10px;
 }
 
 .wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
     width: 1200px;
     margin: 0 auto;
 }
@@ -54,10 +51,6 @@ header {
     top: 7px;
     font-size: 12px;
     color: #888;
-}
-
-.header_nav {
-    margin-left: auto;
 }
 
 .nav {
@@ -149,7 +142,7 @@ header {
     font-weight: bold;
     color: #2A2D46;
     line-height: 1;
-    weight: 
+    font-weight: 900; 
 }
 
 .promo_text p {
@@ -259,6 +252,7 @@ header {
 }
 
 .hot-arrivals {
+    grid-row: 1;
     width: 1300px;
     margin: 0 auto;
     margin-top: 150px;
@@ -272,7 +266,6 @@ header {
   
   .header-line h2 {
     display: inline-block; 
- 
     color: #2A2D46;
     font-weight: 900;
   }
@@ -397,6 +390,7 @@ header {
     gap: 35px; 
     justify-content: center;
     margin-top: 110px;
+    grid-row: 2;
 }
 
 .promo-item {
@@ -446,3 +440,29 @@ header {
     margin-top: -340px;
     margin-left: 510px; 
 }
+
+.catalog-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.catalog-container h2 {
+    color: #2A2D46;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    gap: 35px;
+}
+
+
