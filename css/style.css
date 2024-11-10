@@ -10,6 +10,11 @@ body {
     background-color: #fff;
 }
 
+h1 {
+    font-style: italic;
+    
+}
+
 header {
     position: relative;
     top: 10px;
@@ -87,8 +92,6 @@ header {
     font-family: "Montserrat";
     color: #2A2D46;
 }
-
-
 
 .header_button {
     position: relative;
@@ -271,6 +274,7 @@ header {
     display: inline-block; 
     margin-right: 25px; 
     color: #2A2D46;
+    font-weight: 900;
   }
   
   .header-line a {
@@ -300,7 +304,7 @@ header {
 
 .product-card {
     background-color: #fff;
-    padding: 30px;
+    padding: 25px;
     box-shadow: 0 4px 20px rgba(31, 18, 172, 0.112);
     gap: 50px;
     width: 269px;
@@ -314,6 +318,7 @@ header {
     color: #2A2D46;
     margin-top: -15px;
     text-align: center;
+    font-weight: 900;
 }
 
 .product-card p{
