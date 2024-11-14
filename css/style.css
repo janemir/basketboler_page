@@ -68,6 +68,10 @@ header {
     font-size: 14px;
 }
 
+.nav a:hover {
+    color: #3145FF;
+}
+
 .header_contacts {
     position: relative;
     left: -30px;
@@ -264,23 +268,23 @@ header {
 }
 
   
-  .header-line h2 {
+.header-line h2 {
     display: inline-block; 
     color: #2A2D46;
     font-weight: 900;
-  }
+}
   
-  .header-line a {
+.header-line a {
     display: inline-block;
     padding: 10px 15px; 
     margin: 0 25px; 
     text-decoration: none; 
     color: #2A2D46; 
-  }
-  
-  .header-line a.active {
-    color: #3145FF; 
-  }
+}
+
+.header-line a:hover {
+    color: #3145FF;
+}
 
   .product-wrapper {
     display: flex;
@@ -465,22 +469,46 @@ header {
     gap: 35px;
 }
 
-.statistics h2 {
-    color: #2A2D46;
-    font-weight: 900;
-    font-size: 25px;
+.statistics {
     width: 1200px;
     margin: 0 auto;
     margin-top: 80px;
 }
 
+.statistics h2 {
+    color: #2A2D46;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.stats-container {
+    display: flex;
+    margin-top: 80px;
+    gap: 50px;
+}
+
+.stat-label {
+    font-size: 14px;
+    text-align: left;
+    left: -30px;
+}
+
+.stat-number {
+    font-size: 50px;
+    font-weight: 900;
+}
+
 footer {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
     background-color: #2A2D46;
     color: white;
     height: 400px;
     left: 0;
     position: absolute;
     width: 100%;
+
 }
 
 .footer_logo {
@@ -529,6 +557,10 @@ footer {
     font-size: 14px;
 }
 
+.nav_footer a:hover {
+    color: #EB2D66;
+}
+
 .footer_contacts {
     position: relative;
     left: -30px;
@@ -559,3 +591,10 @@ footer {
     font-size: 14px;
     cursor: pointer;
 }
+
+.footer_button :hover {
+    background-color: #EB2D66;
+    padding: 6px; 
+    color: #2A2D46;
+}
+
