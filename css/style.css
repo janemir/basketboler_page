@@ -452,7 +452,6 @@ header {
     margin: 0 auto;
 }
 
-
 .catalog-container h2 {
     color: #2A2D46;
     font-weight: 900;
@@ -461,8 +460,8 @@ header {
     margin-left: 10px;
 }
 
-
 .product-grid {
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     justify-content: center;
@@ -499,22 +498,24 @@ header {
 }
 
 footer {
-    margin-top: 80px;
     display: flex;
-    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    align-items: center; 
     background-color: #2A2D46;
     color: white;
     height: 400px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .footer_logo {
+    margin-left: 50px;
     display: flex;
     align-items: center;
-    margin: 20px 0;
 }
 
 .footer_logo_img {
@@ -544,8 +545,6 @@ footer {
 
 .nav_footer {
     position: relative;
-    left: 320px;
-    top: -50px;
     display: flex;
     list-style-type: none;
     gap: 30px;
@@ -563,7 +562,6 @@ footer {
 
 .footer_contacts {
     position: relative;
-    left: -30px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -572,8 +570,6 @@ footer {
 .footer_phone {
     position: relative;
     text-decoration: none;
-    left: 760px;
-    top: -70px;
     font-size: 14px;
     font-family: "Montserrat";
     color: #ffffff;
@@ -581,8 +577,7 @@ footer {
 
 .footer_button {
     position: relative;
-    left: 800px;
-    top: -70px;
+    margin-left: 50px;
     background-color: #2A2D46;
     color: #EB2D66;
     font-family: "Montserrat";
@@ -592,9 +587,12 @@ footer {
     cursor: pointer;
 }
 
+.arrow-icon {
+    margin-left: 20px;
+}
+
 .footer_button :hover {
     background-color: #EB2D66;
-    padding: 6px; 
     color: #2A2D46;
 }
 
