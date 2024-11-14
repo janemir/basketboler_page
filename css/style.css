@@ -499,17 +499,14 @@ header {
 
 footer {
     display: flex;
-    position: relative;
     margin-top: 80px;
     align-items: center; 
     background-color: #2A2D46;
     color: white;
     height: 400px;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .footer_logo {
