@@ -490,9 +490,14 @@ header {
     gap: 50px;
 }
 
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
 .stat-label {
     font-size: 14px;
-    text-align: left;
+    margin-left: 17px;
     left: -30px;
 }
 
