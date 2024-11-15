@@ -507,6 +507,14 @@ footer {
     width: 100%;
 }
 
+.footer_content {
+    display: flex;
+    align-items:flex-start;
+    
+    
+    
+}
+
 .footer_logo {
     margin-left: 50px;
     display: flex;
@@ -536,6 +544,10 @@ footer {
     top: 7px;
     font-size: 12px;
     color: #ffffff;
+}
+
+.footer_nav {
+    margin-left: 40px;
 }
 
 .nav_footer {
