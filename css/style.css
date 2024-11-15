@@ -497,7 +497,7 @@ header {
 
 .stat-label {
     font-size: 14px;
-    margin-left: 17px;
+    margin-left: 20px;
     left: -30px;
 }
 
@@ -514,6 +514,7 @@ footer {
     color: white;
     height: 400px;
     width: 100%;
+    gap: 60px;
 }
 
 .footer_content {
@@ -536,8 +537,7 @@ footer {
 }
 
 .footer_logo_name {
-    position: relative;
-    top: -10px;
+    margin-top: 12px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
@@ -546,28 +546,32 @@ footer {
 .footer_logo_subtitle {
     position: relative;
     left: -132px;
-    top: 7px;
+    top: 15px;
     font-size: 12px;
     color: #ffffff;
     width: 200px;
 }
 
-.footer_nav {
-    display: flex;
-    align-items: center;
-}
-
 .nav_footer {
     position: relative;
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 30px;
+    margin-left: 250px;
 }
 
 .nav_footer a {
+    position: relative;
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
+    top: -5px;
+}
+
+.nav_footer img {
+    position: relative;
+    top: -5px;
 }
 
 .nav_footer a:hover {
@@ -575,14 +579,12 @@ footer {
 }
 
 .footer_contacts {
-    position: relative;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 90px;
 }
 
 .footer_phone {
-    position: relative;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat";
@@ -590,8 +592,6 @@ footer {
 }
 
 .footer_button {
-    position: relative;
-    margin-left: 50px;
     background-color: #2A2D46;
     color: #EB2D66;
     font-family: "Montserrat";
@@ -601,11 +601,7 @@ footer {
     cursor: pointer;
 }
 
-.arrow-icon {
-    margin-left: 20px;
-}
-
-.footer_button :hover {
+.footer_button:hover {
     background-color: #EB2D66;
     color: #2A2D46;
 }
