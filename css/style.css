@@ -325,17 +325,10 @@ header {
     text-align: center;
 }
 
-.product-card img {
+.product {
     display: block;
     margin: 0 auto;
     margin-top: 10px; 
-}
-
-
-.product-arrow{
-    
-    margin-left: 200px;
-    margin-top: -80px;
 }
 
 .old-price {
@@ -348,13 +341,22 @@ header {
     margin-top: 10px;
 }
 
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .new-price {
     font-size: 16px;
     font-weight: bold;
     color: #3145FF;
     text-align: left;
-    margin-top: 80px;
-    
+}
+
+.product-arrow {
+    left: 20px;
 }
 
 .product-decorator {
@@ -500,7 +502,7 @@ header {
 footer {
     display: flex;
     margin-top: 80px;
-    align-items: center; 
+    justify-content: center; 
     background-color: #2A2D46;
     color: white;
     height: 400px;
@@ -509,14 +511,10 @@ footer {
 
 .footer_content {
     display: flex;
-    align-items:flex-start;
-    
-    
-    
+    justify-content:flex-start;
 }
 
 .footer_logo {
-    margin-left: 50px;
     display: flex;
     align-items: center;
 }
@@ -544,10 +542,12 @@ footer {
     top: 7px;
     font-size: 12px;
     color: #ffffff;
+    width: 200px;
 }
 
 .footer_nav {
-    margin-left: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .nav_footer {
