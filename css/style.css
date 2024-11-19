@@ -118,6 +118,7 @@ header {
 
 .arrow{
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .cart_icon {
@@ -368,10 +369,12 @@ header {
 
 .product-decorator.left {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .product-decorator.right {
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .carousel-indicator {
@@ -390,6 +393,7 @@ header {
 .slider {
     margin-left: -320px; 
     margin-top: 5px;
+    cursor: pointer;
 }
 
 
