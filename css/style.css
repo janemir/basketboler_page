@@ -122,6 +122,40 @@ header {
     cursor: pointer;
 }
 
+.popup-menu {
+    display: none; /* Скрыто изначально */
+    opacity: 0; /* Прозрачность для плавного появления */
+    transform: translateY(-10px); /* Смещение вверх для эффекта */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавное появление */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .popup-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popup-menu li {
+    margin: 5px 0;
+  }
+  
+  .popup-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .popup-menu li a:hover {
+    color: #007bff;
+  }
+
 .cart_icon {
     position: relative;
     position: relative;
@@ -578,6 +612,10 @@ footer {
 .nav_footer img {
     position: relative;
     top: -5px;
+}
+
+.arrow_icon{
+    cursor: pointer;
 }
 
 .nav_footer a:hover {

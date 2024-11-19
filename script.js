@@ -1,14 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Находим элемент с классом "arrow-container"
-    const arrowContainer = document.querySelector(".arrow");
+    const arrow = document.querySelector(".arrow"); // Находим стрелку
+    const popupMenu = document.querySelector(".popup-menu"); // Popup-меню
   
-    // Назначаем обработчик события клика
-    arrowContainer.addEventListener("click", () => {
-      console.log("Клик по стрелке!");
+    // Функция для открытия/закрытия меню
+    arrow.addEventListener("click", (event) => {
+      event.stopPropagation(); // Предотвращаем всплытие события
   
-      // Выполняем нужные действия, например, показываем popup
-      const popup = document.querySelector(".popup-menu");
-      popup.style.display = popup.style.display === "block" ? "none" : "block";
+      if (popupMenu.style.display === "block") {
+        // Скрыть меню
+        popupMenu.style.opacity = "0";
+        popupMenu.style.transform = "translateY(-10px)";
+        setTimeout(() => (popupMenu.style.display = "none"), 300); // Анимация
+      } else {
+        // Показать меню
+        popupMenu.style.display = "block";
+        setTimeout(() => {
+          popupMenu.style.opacity = "1";
+          popupMenu.style.transform = "translateY(0)";
+        }, 0);
+      }
+    });
+  
+    // Скрытие popup при клике вне него
+    document.addEventListener("click", (e) => {
+      if (!arrow.contains(e.target) && !popupMenu.contains(e.target)) {
+        popupMenu.style.opacity = "0";
+        popupMenu.style.transform = "translateY(-10px)";
+        setTimeout(() => (popupMenu.style.display = "none"), 300);
+      }
     });
   });
   
