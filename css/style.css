@@ -123,41 +123,42 @@ header {
 }
 
 .popup-menu {
-    display: none; /* Скрыто изначально */
-    opacity: 0; /* Прозрачность для плавного появления */
-    transform: translateY(-10px); /* Смещение вверх для эффекта */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавное появление */
+    margin: 70px;
+    margin-top: 160px;
+    display: flex; 
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease; 
     position: absolute;
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #3145FF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 7px;
     z-index: 1000;
-  }
-  
-  .popup-menu ul {
+    width: 120px;
+    height: 55px;
+}
+
+.popup-menu ul {
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .popup-menu li {
-    margin: 5px 0;
-  }
+}
   
   .popup-menu li a {
     text-decoration: none;
-    color: #333;
+    color: #2A2D46;
     font-size: 16px;
   }
   
   .popup-menu li a:hover {
-    color: #007bff;
+    color: #3145FF;
   }
 
 .cart_icon {
-    position: relative;
     position: relative;
     left: -10px;
     width: 25px;
