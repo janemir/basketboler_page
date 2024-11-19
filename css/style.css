@@ -117,12 +117,48 @@ header {
 }
 
 .arrow{
+    display: inline-block;
     margin-left: 10px;
     cursor: pointer;
 }
 
+.popup-menu {
+    margin: 70px;
+    margin-top: 160px;
+    display: flex; 
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease; 
+    position: absolute;
+    background-color: white;
+    border: 1px solid #3145FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    z-index: 1000;
+    width: 120px;
+    height: 55px;
+}
+
+.popup-menu ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  .popup-menu li a {
+    text-decoration: none;
+    color: #2A2D46;
+    font-size: 16px;
+  }
+  
+  .popup-menu li a:hover {
+    color: #3145FF;
+  }
+
 .cart_icon {
-    position: relative;
     position: relative;
     left: -10px;
     width: 25px;
@@ -360,6 +396,7 @@ header {
 
 .product-arrow {
     left: 20px;
+    cursor: pointer;
 }
 
 .product-decorator {
@@ -576,6 +613,10 @@ footer {
 .nav_footer img {
     position: relative;
     top: -5px;
+}
+
+.arrow_icon{
+    cursor: pointer;
 }
 
 .nav_footer a:hover {
