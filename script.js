@@ -30,4 +30,41 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".product-carousel");
+    const leftArrow = document.querySelector(".product-decorator.left");
+    const rightArrow = document.querySelector(".product-decorator.right");
+
+    // Перемещение карточек по клику на стрелки
+    const moveRight = () => {
+        const firstCard = carousel.firstElementChild;
+        carousel.appendChild(firstCard); // Перемещаем первую карточку в конец
+    };
+
+    const moveLeft = () => {
+        const lastCard = carousel.lastElementChild;
+        carousel.insertBefore(lastCard, carousel.firstElementChild); // Перемещаем последнюю карточку в начало
+    };
+
+    // Обработчики для стрелок
+    leftArrow.addEventListener("click", () => {
+        carousel.style.transition = "none"; // Отключаем анимацию для перестановки
+        moveLeft();
+        requestAnimationFrame(() => {
+            carousel.style.transition = "transform 0.5s ease"; // Включаем анимацию
+            carousel.style.transform = "translateX(0)"; // Сбрасываем смещение
+        });
+    });
+
+    rightArrow.addEventListener("click", () => {
+        carousel.style.transition = "none"; // Отключаем анимацию для перестановки
+        moveRight();
+        requestAnimationFrame(() => {
+            carousel.style.transition = "transform 0.5s ease"; // Включаем анимацию
+            carousel.style.transform = "translateX(0)"; // Сбрасываем смещение
+        });
+    });
+});
+
   
