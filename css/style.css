@@ -117,6 +117,7 @@ header {
 }
 
 .arrow{
+    display: inline-block;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -360,6 +361,7 @@ header {
 
 .product-arrow {
     left: 20px;
+    cursor: pointer;
 }
 
 .product-decorator {
