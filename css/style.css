@@ -216,19 +216,18 @@ header {
     box-shadow: 0px 4px 20px rgba(255, 53, 124, 0.432);
 }
 
+.promo_button:hover {
+    background-color: #fff;
+    color: #EB2D66;
+}
+
 .promo_image-wrapper {
     position: relative;
     width: 600px;
     height: 400px;
 }
 
-.promo_background {
-    position: absolute;
-    top: -130px;
-    left: 0;
-    width: 615px;
-    height: 369px;
-}
+
 
 .promo_image_1 {
     width: 110%;
