@@ -222,13 +222,7 @@ header {
     height: 400px;
 }
 
-.promo_background {
-    position: absolute;
-    top: -130px;
-    left: 0;
-    width: 615px;
-    height: 369px;
-}
+
 
 .promo_image_1 {
     width: 110%;
