@@ -242,8 +242,8 @@ header {
 .promo_image_2 {
     width: 100%;
     height: auto;
-    position: relative;
-    top: -330px;
+    position: absolute;
+    top: 70px;
     left: -50px;
     z-index: 2;
 }
