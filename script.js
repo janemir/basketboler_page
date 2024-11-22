@@ -1,18 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const arrow = document.querySelector(".arrow"); // Находим стрелку
-  const popupMenu = document.querySelector(".popup-menu"); // Popup-меню
-
-  // Функция для открытия/закрытия меню
+  const arrow = document.querySelector(".arrow"); 
+  const popupMenu = document.querySelector(".popup-menu"); 
   arrow.addEventListener("click", (event) => {
-    event.stopPropagation(); // Предотвращаем всплытие события
+    event.stopPropagation(); 
 
     if (popupMenu.style.display === "block") {
-      // Скрыть меню
       popupMenu.style.opacity = "0";
       popupMenu.style.transform = "translateY(-10px)";
-      setTimeout(() => (popupMenu.style.display = "none"), 300); // Анимация
+      setTimeout(() => (popupMenu.style.display = "none"), 300); 
     } else {
-      // Показать меню
       popupMenu.style.display = "block";
       setTimeout(() => {
         popupMenu.style.opacity = "1";
@@ -21,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Скрытие popup при клике вне него
+
   document.addEventListener("click", (e) => {
     if (!arrow.contains(e.target) && !popupMenu.contains(e.target)) {
       popupMenu.style.opacity = "0";
