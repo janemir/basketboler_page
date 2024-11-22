@@ -346,6 +346,7 @@ header {
     align-items: center;
     gap: 40px;
     transition: transform 5s ease;
+    overflow: hidden;
 }
 
 .product-card {
@@ -432,18 +433,18 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-left: -250px;
 }
 
 .scroll-line {
+    position: relative;
     display: flex;
     align-items: center; 
     margin-top: 30px;
 }
 
 .slider {
-    margin-left: -320px; 
-    margin-top: 5px;
+
+    position: absolute;
     cursor: pointer;
 }
 

@@ -28,39 +28,80 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const carousel = document.querySelector(".product-carousel");
+    const wrapper = document.querySelector(".product-wrapper");
+    const carousel = wrapper.querySelector(".product-carousel");
     const leftArrow = document.querySelector(".product-decorator.left");
     const rightArrow = document.querySelector(".product-decorator.right");
+    const slider = document.querySelector(".slider");
+    const scrollLine = document.querySelector(".scroll-line");
+    const productCards = Array.from(carousel.children);
 
-    // Перемещение карточек по клику на стрелки
+    let isDragging = false; 
+    let initialMouseX = 0;
+    let initialLeft = 0; 
+    let currentOffset = 0; 
+
+    const totalCards = productCards.length; 
+
+
     const moveRight = () => {
-        const firstCard = carousel.firstElementChild;
-        carousel.appendChild(firstCard); // Перемещаем первую карточку в конец
+        currentOffset = (currentOffset + 1) % totalCards; 
+        updateCardOrder();
+        updateSliderPosition(); 
     };
 
     const moveLeft = () => {
-        const lastCard = carousel.lastElementChild;
-        carousel.insertBefore(lastCard, carousel.firstElementChild); // Перемещаем последнюю карточку в начало
+        currentOffset = (currentOffset - 1 + totalCards) % totalCards; 
+        updateCardOrder();
+        updateSliderPosition(); 
     };
 
-    // Обработчики для стрелок
-    leftArrow.addEventListener("click", () => {
-        carousel.style.transition = "none"; // Отключаем анимацию для перестановки
-        moveLeft();
-        requestAnimationFrame(() => {
-            carousel.style.transition = "transform 0.5s ease"; // Включаем анимацию
-            carousel.style.transform = "translateX(0)"; // Сбрасываем смещение
-        });
+    leftArrow.addEventListener("click", moveLeft);
+    rightArrow.addEventListener("click", moveRight);
+
+    slider.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        initialMouseX = e.clientX; 
+        initialLeft = parseFloat(getComputedStyle(slider).left) || 0; 
+        document.body.style.userSelect = "none"; 
     });
 
-    rightArrow.addEventListener("click", () => {
-        carousel.style.transition = "none"; // Отключаем анимацию для перестановки
-        moveRight();
-        requestAnimationFrame(() => {
-            carousel.style.transition = "transform 0.5s ease"; // Включаем анимацию
-            carousel.style.transform = "translateX(0)"; // Сбрасываем смещение
-        });
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+        document.body.style.userSelect = ""; 
     });
+
+    document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return; 
+
+        const rect = scrollLine.getBoundingClientRect(); 
+        const deltaX = e.clientX - initialMouseX; 
+        let newLeft = initialLeft + deltaX; 
+
+        if (newLeft < 0) newLeft = 0; 
+        if (newLeft > rect.width - slider.offsetWidth) newLeft = rect.width - slider.offsetWidth; 
+
+        slider.style.left = `${newLeft}px`; 
+
+        const sliderPosition = newLeft / (rect.width - slider.offsetWidth); 
+        currentOffset = Math.round(sliderPosition * totalCards); 
+        updateCardOrder(); 
+    });
+
+    function updateCardOrder() {
+        productCards.forEach((card, index) => {
+            card.style.order = (index + currentOffset) % totalCards; 
+        });
+    }
+
+    function updateSliderPosition() {
+        const rect = scrollLine.getBoundingClientRect();
+        const sliderPosition = currentOffset / totalCards;
+        slider.style.left = `${sliderPosition * (rect.width - slider.offsetWidth)}px`;
+    }
+
+    updateCardOrder();
+    updateSliderPosition();
 });
 
 
